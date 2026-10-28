@@ -63,7 +63,7 @@ const R=new URLSearchParams(location.search).get('r');
 const LW={e:17,n:10,i:8,s:7,r:7,a:7,t:6,d:5,h:5,u:5,l:4,c:3,g:3,m:3,o:3,b:2,w:2,f:2,k:2,z:1,p:1,v:1,j:1};
 const VER='V9';
 /* ---------- Verbindung über deinen Render-Server (ersetzt die Direktverbindung) ---------- */
-const SERVER='wss://DEIN-DIENST.onrender.com';   // <- hier deine Render-Adresse eintragen (mit wss:// am Anfang)
+const SERVER='wss://radlers-boggle-server.onrender.com/';   // <- hier deine Render-Adresse eintragen (mit wss:// am Anfang)
 try{fetch(SERVER.replace(/^ws/,'http')+'/',{mode:'no-cors'}).catch(()=>{})}catch(e){}   // weckt den Server schon beim Öffnen der Seite
 class Conn{
  constructor(p,peer,cid){this.p=p;this.peer=peer;this.cid=cid;this.open=false;this.h={}}
